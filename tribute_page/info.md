@@ -23,3 +23,5 @@ Aqui una linea de tiempo de la vida de Jorge Basadre:
 -- Sociologo Peruano Roberto Rodríguez Rabanal
 
 Si tiene tiempo, deberias leer mas sobre esta increible ser humano en su entrada de [wikipedia](https://en.wikipedia.org/wiki/Jorge_Basadre)
+
+[Biografia basadre](https://sisbib.unmsm.edu.pe/exposiciones/basadre_centenario/cronologia.htm)

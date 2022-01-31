@@ -1,0 +1,11 @@
+* {  
+  margin: 0;
+  background-color: white;
+  font-family: "Padauk", sans-serif;  
+}
+
+main {
+  margin: 30px;
+  padding: auto;
+  background-color:#fdfdcf;  
+}

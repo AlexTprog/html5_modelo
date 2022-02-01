@@ -1,6 +1,5 @@
 * {  
-  margin: 0;
-  background-color: white;
+  margin: 0;  
   font-family: "Padauk", sans-serif;  
   text-align: center;
   font-size: 20px;  
@@ -34,6 +33,7 @@ section{
 
 figure{
   margin: 15px 15px;  
+  background-color: white;
 }
 
 figure img{

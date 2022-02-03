@@ -29,28 +29,29 @@
 
         <div class="pregunta">
             <label>Telefono</label>
-            <input type="number" name="" id="number" placeholder="Escribe tu telefono">
+            <input type="tel" name="" id="number" placeholder="Escribe tu telefono">
         </div>
 
         <div class="pregunta">
             <label>A que escuela pertences?</label>
-            <input list="escuelas" name="browser" id="dropdown" placeholder="Elija una escuela">            
-            <datalist id="escuelas">
-                <option value="Ingenieria de Software">
-                <option value="Ingenieria de Sistemas">
-                <option value="Ingenieria Industrial">
-                <option value="Ingenieria Electrica">
-                <option value="Ingenieria Quimica">
-            </datalist>
+            <select id="dropdown" name="role" required>
+                <option disabled selected value>Seleciona una escuela</option>
+                <option value="IngSof">Ingenieria de Software</option>
+                <option value="IngSis">Ingenieria de Sistemas</option>
+                <option value="IngInd">Ingenieria Industrial</option>
+                <option value="IngElex">Ingenieria Electrica</option>
+                <option value="IngQuim">Ingenieria Quimica</option>
+            </select>
+
         </div>
 
         <div class="pregunta">
             <label>Tipo de Universidad</label>
-            <label for="">
+            <label>
                 <input type="radio" name="tipouniv" id=""> Publica
             </label>
 
-            <label for="">
+            <label>
                 <input type="radio" name="tipouniv" id=""> Privada
             </label>
         </div>
@@ -58,30 +59,30 @@
         <div class="pregunta">
             <label>Que cursos desea llevar?</label>
 
-            <label for="">
-                <input type="checkbox" name="" id=""> Curso 1
+            <label>
+                <input type="checkbox" name="curso" id=""> Curso 1
             </label>
 
-            <label for="">
-                <input type="checkbox" name="" id=""> Curso 2
+            <label>
+                <input type="checkbox" name="curso" id=""> Curso 2
             </label>
 
-            <label for="">
-                <input type="checkbox" name="" id=""> Curso 3
+            <label>
+                <input type="checkbox" name="curso" id=""> Curso 3
             </label>
 
-            <label for="">
-                <input type="checkbox" name="" id=""> Curso 4
+            <label>
+                <input type="checkbox" name="curso" id=""> Curso 4
             </label>
         </div>
 
         <div class="pregunta">
             <label>Mensaje</label>
             <textarea name="mensaje" rows="10" cols="40" placeholder="Escribe aquí tu mensaje"></textarea>
-            <button>Enviar</button>    
+            <button>Enviar</button>
         </div>
 
-                
+
     </form>
 
 </body>

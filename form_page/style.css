@@ -33,12 +33,14 @@ form{
     
     padding: 30px 20px 30px 20px;
 
-    background-color: #ffffff;
+    color: white;    
+
+    background-color: #b19e32;
     border-radius: 1%;
 }
 
 form label{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 label{
@@ -48,8 +50,6 @@ label{
 input::placeholder{
     font-size: 16px;
 }
-
-
 
 .pregunta{
     display: flex;
@@ -68,7 +68,19 @@ input::placeholder{
     padding: 10px;
 }
 
+input,select{
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: white;
+    background-color: white;
+    font-size: 15px;
+}
 
+input:focus {    
+    border: 3px solid rgb(255, 255, 255);    
+    outline: 0;
+    padding: 8px;    
+}
 
 textarea{
     resize: none;

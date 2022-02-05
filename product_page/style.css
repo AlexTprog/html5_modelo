@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;    
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+}
+
+form button{
+    padding: 3px 30px 3px 30px;
+}
+
+form input{
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    font: 1em sans-serif;
+    color: #302e2e;
+    padding: 0px 5px 0px 5px;
+}
+
+#title{
+    text-align: center;
+}

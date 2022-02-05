@@ -13,28 +13,33 @@
 
     <header>
         <h1 id="title">Formulario de Contacto</h1>
-        <p><i>Escibenos y nos pondremos en contacto.</i></p>
+        <p id="description"><i>Escibenos y nos pondremos en contacto.</i></p>
     </header>
 
-    <form action="">
+    <form id="survey-form">
         <div class="pregunta">
-            <label for="">Nombre</label>
+            <label id="name-label">Nombre</label>
             <input type="text" name="" id="name" placeholder="Escribe tu nombre">
         </div>
 
         <div class="pregunta">
-            <label for="">Email</label>
+            <label id="age-label">Edad</label>
+            <input type="number" name="age" id="age" min="15" max="120" placeholder="Escribe tu edad.">
+        </div>
+
+        <div class="pregunta">
+            <label id="Email-label">Email</label>
             <input type="email" name="" id="email" placeholder="Escribe tu Email">
         </div>
 
         <div class="pregunta">
-            <label>Telefono</label>
+            <label id="number-label">Telefono</label>
             <input type="tel" name="" id="number" placeholder="Escribe tu telefono">
         </div>
 
         <div class="pregunta">
             <label>A que escuela pertences?</label>
-            <select id="dropdown" name="role" required>
+            <select id="dropdown" name="school" required>
                 <option disabled selected value>Seleciona una escuela</option>
                 <option value="IngSof">Ingenieria de Software</option>
                 <option value="IngSis">Ingenieria de Sistemas</option>
@@ -79,7 +84,7 @@
         <div class="pregunta">
             <label>Mensaje</label>
             <textarea name="mensaje" rows="10" cols="40" placeholder="Escribe aquí tu mensaje"></textarea>
-            <button>Enviar</button>
+            <button id="submit">Enviar</button>
         </div>
 
 

@@ -24,17 +24,17 @@
 
         <div class="pregunta">
             <label id="age-label">Edad</label>
-            <input required type="number" name="age" id="age" min="15" max="120" placeholder="Escribe tu edad.">
+            <input type="number" name="age" id="number" min="15" max="120" placeholder="Escribe tu edad.">
         </div>
 
         <div class="pregunta">
-            <label id="Email-label">Email</label>
+            <label id="email-label">Email</label>
             <input required type="email" name="" id="email" placeholder="Escribe tu Email">
         </div>
 
         <div class="pregunta">
             <label id="number-label">Telefono</label>
-            <input type="tel" name="" id="number" placeholder="Escribe tu telefono">
+            <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu telefono">
         </div>
 
         <div class="pregunta">
@@ -53,31 +53,43 @@
         <div class="pregunta">
             <label>Tipo de Universidad</label>
             <label>
-                <input type="radio" name="tipouniv" id=""> Publica
+                <input
+                  type="radio" 
+                  name="tipouniv"
+                  value="public" 
+                  id=""
+                  checked
+                  > Publica
             </label>
 
             <label>
-                <input type="radio" name="tipouniv" id=""> Privada
+                <input 
+                type="radio" 
+                name="tipouniv" 
+                value="private" 
+                id=""
+                > Privada
             </label>
+            
         </div>
 
         <div class="pregunta">
             <label>Que cursos desea llevar?</label>
 
             <label>
-                <input type="checkbox" name="curso" id=""> Curso 1
+                <input type="checkbox" value="curso 1" id=""> Curso 1
             </label>
 
             <label>
-                <input type="checkbox" name="curso" id=""> Curso 2
+                <input type="checkbox" value="curso 2" id=""> Curso 2
             </label>
 
             <label>
-                <input type="checkbox" name="curso" id=""> Curso 3
+                <input type="checkbox" value="curso 3" id=""> Curso 3
             </label>
 
             <label>
-                <input type="checkbox" name="curso" id=""> Curso 4
+                <input type="checkbox" value="curso 4" id=""> Curso 4
             </label>
         </div>
 

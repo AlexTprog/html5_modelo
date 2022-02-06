@@ -1,6 +1,7 @@
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 form{
@@ -11,11 +12,15 @@ form{
 }
 
 form button{
-    padding: 3px 30px 3px 30px;
+    padding: 5px 30px 5px 30px;
+    background-color: #f1c40f;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 form input{
-    padding: 5px 10px 5px 10px;
+    padding: 5px 130px 5px 10px;
     margin-bottom: 10px;
 }
 
@@ -23,9 +28,26 @@ form input{
     text-decoration: none;
     font: 1em sans-serif;
     color: #302e2e;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 50px 0px 50px;
+}
+
+.logo{
+    width: 100%;
+    min-height: auto;
+    max-height: 40px;
+}
+
+.char{
+    display: grid;    
+    grid-template-columns: 2;
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1;
 }
 
 #title{
     text-align: center;
 }
+

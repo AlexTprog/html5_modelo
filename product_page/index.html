@@ -10,27 +10,36 @@
 </head>
 
 <body>
-    <nav>
-        <a href=""><img class="logo"
-                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-                alt="."></a>
-        <div class="nav-link">
-            <a href="">Features</a>
-            <a href="">How it Works</a>
-            <a href="">Pricing</a>
-        </div>
-    </nav>
+    <header id="header">
+        <img id="header-img"
+            src="https://www.nicepng.com/png/full/529-5297959_specialized-specialized-bikes-logo-vector.png" alt=".">
 
-    <h1 id="title">Handcrafted, home-made masterpieces</h1>
+        <nav id="nav-bar">
 
-    <form action="">
+            <div>
+                <a class="nav-link" href="#Features">Features</a>
+                <a class="nav-link" href="#How-it-works">How it Works</a>
+                <a class="nav-link" href="#Pricing">Pricing</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <h1 id="title">All you need at your fingertips</h1>
+
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
         <label>
-            <input type="text" placeholder="Enter you email address">
+            <input id="email" type="email" placeholder="Enter you email address" required>
         </label>
-        <button>GET STARTED</button>
+        <input id="submit" type="submit" value="GET STARTED">
     </form>
 
-    <div class="container">
+
+
+
+
+    <div id="Features" class="container">
 
         <div class="element">
             <img class="icon" src="https://cdn-icons-png.flaticon.com/512/565/565350.png" alt="a">
@@ -60,6 +69,49 @@
                     libero
                     consectetur? </p>
             </div>
+        </div>
+    </div>
+
+    <div id="How-it-works" class="video">        
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/MWyBgudQqsI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div id="Pricing" class="promos flex text-center">
+        <div class="columna">
+            <h2>Plan Basic</h2>
+            <p class="precio">$100</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing eliit.</p>
+            <hr>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum sit amen</p>
+            <p>Lorem ipsum</p>
+            <hr>
+            <a href="#" class="btn-precio">Comprar</a>
+        </div>
+        <div class="columna">
+            <h2>Plan Standar</h2>
+            <p class="precio">$500</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing eliit.</p>
+            <hr>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum sit amen</p>
+            <p>Lorem ipsum</p>
+            <hr>
+            <a href="#" class="btn-precio">Comprar</a>
+        </div>
+        <div class="columna">
+            <h2>Plan Premium</h2>
+            <p class="precio">$1000</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing eliit.</p>
+            <hr>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum sit amen</p>
+            <p>Lorem ipsum</p>
+            <hr>
+            <a href="#" class="btn-precio">Comprar</a>
         </div>
     </div>
 

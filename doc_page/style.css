@@ -1,0 +1,29 @@
+*{
+    
+}
+
+body{
+    display: flex;
+}
+
+#nav-bar{
+    border-style: none solid solid none;        
+}
+
+#nav-bar header{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+
+#main-doc{
+    padding: 20px;
+    margin: 0;
+}
+
+section header{
+    font-size: 30px;
+}
+

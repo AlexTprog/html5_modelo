@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Documentacion</title>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,32 +15,29 @@
         <header>Python Documentation</header>
         <ul>
             <li>
-                <a class="nav-link" href="#Introduction">Introduction</a>
-            </li>
-            
-            <li>
-                <a class="nav-link"  href="">Hello world</a>
-            </li>
-            
-            <li>
-                <a class="nav-link"  href="">Variables</a>
+                <a class="nav-link" href="#Introduccion">Introduccion</a>
             </li>
 
             <li>
-                <a class="nav-link"  href="">Global variables</a>
+                <a class="nav-link" href="#Hello-World">Hello world</a>
             </li>
 
             <li>
-                <a class="nav-link"  href="">Constants</a>
+                <a class="nav-link" href="#Tipo-de-datos">Tipos de datos</a>
             </li>
 
             <li>
-                <a class="nav-link"  href="">Control Flow Tools</a>
+                <a class="nav-link" href="#Entrada-y-salida">Entrada y salida</a>
             </li>
-            
+
             <li>
-                <a class="nav-link"  href="">Function declarations</a>
+                <a class="nav-link" href="#If-else">If else</a>
             </li>
+
+            <li>
+                <a class="nav-link" href="#Funciones">Funciones</a>
+            </li>
+
 
             <li>
                 <a class="nav-link" href="#References">References</a>
@@ -49,61 +46,496 @@
     </nav>
 
     <main id="main-doc">
-        <section class="main-section" id="Introduction">
+        <section class="main-section" id="Introduccion">
             <header>Introduction</header>
             <p>
-                Python is an easy to learn, powerful programming language. It has efficient high-level data structures
-                and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic
-                typing, together with its interpreted nature, make it an ideal language for scripting and rapid
-                application development in many areas on most platforms.
+                Python es un lenguaje de programación potente y fácil de aprender. Posee eficientes estructuras de datos
+                de alto nivel y un enfoque sencillo pero efectivo de la programación orientada a objetos. La sintaxis
+                elegante, los tipos de datos dinámicos y el hecho de ser un lenguaje interpretado hacen de Python un
+                lenguaje ideal para la creación de scripts y el desarrollo rápido de aplicaciones en todo tipo de áreas
+                y plataformas.
             </p>
 
             <p>
-                The Python interpreter and the extensive standard library are freely available in source or binary form
-                for all major platforms from the
-                <a href="https://www.python.org/">Python web</a>
-                site and may be freely distributed. The same site also contains distributions of and pointers to many
-                free third party Python modules, programs and tools, and additional documentation.
+                El intérprete de Python y la biblioteca estándar están disponibles en forma de código fuente o código
+                ejecutable para los principales sistemas operativos en el sitio web oficial de
+                <a href="https://www.python.org/">Python</a>
+                y puede distribuirse libremente. Ese sitio web también contiene información sobre muchos módulos,
+                programas y herramientas para Python, así como documentación adicional.
             </p>
-            <code>
 
-            </code>
+            <p>
+                El intérprete de Python puede ampliarse fácilmente con nuevas funciones y tipos de datos implementados
+                en C o C++ (u otros lenguajes accesibles desde C). Python es también adecuado como lenguaje de extensión
+                de aplicaciones.
+            </p>
         </section>
 
         <section class="main-section" id="Hello World">
             <header>Hello World</header>
             <p>
-                To get started with writing Python, open the interpreter and write your first "Hello world" python code:
+                El ejemplo siguiente muestra la plantilla de programa básico de Python 3
             </p>
 
             <code>
-                print("Hello World")
+                def main():   <br>
+                &nbsp print("¡Hola, mundo!")
+                <br><br>
+                if __name__ == "__main__":  <br>
+                &nbsp main()
             </code>
+
+            <p>Las instrucciones que forman el programa, se escribirían dentro de la función main(), es decir, sangradas cuatro espacios.</p>
+            
+            <code>
+                def main():      <br>
+                &nbsp print("¡Hola, mundo!")   <br>
+                &nbsp print("¡Adiós, mundo!")
+                <br><br>
+                if __name__ == "__main__":  <br>
+                &nbsp main()
+            </code>
+
         </section>
 
-        <section class="main-section" id="References">
-            <header>References</header>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur alias dignissimos fuga saepe
-                reiciendis in, corrupti quis aliquid tempore unde similique consequuntur eveniet iure ducimus recusandae
-                quibusdam! Quia, unde eos.
+        <section class="main-section" id="Tipos de Datos">
+            <header>Tipos de datos</header>
+            <h3>Enteros y decimales</h3>
+            <p>Python distingue entre números enteros y decimales. Al escribir un número decimal, el separador entre la parte entera y la parte decimal es un punto.</p>
+
+            <code>
+                >>> 3   <br>
+                3   <br>
+                >>> 4.5  <br>
+                4.5
+            </code>
+            <p>Si se escribe un número con parte decimal 0, Python considera el número como número decimal.</p>
+
+            <code>
+                >>> 3.0  <br>
+                3.0
+            </code>
+
+            <p>Se puede escribir un número decimal sin parte entera, pero lo habitual es escribir siempre la parte entera:</p>
+
+            <code>
+                >>> .3   <br>
+                0.3
+            </code>
+            
+            <h3>Operaciones basicas</h3>
+            <p>Las cuatro operaciones aritméticas básicas son la suma (+), la resta (-), la multiplicación (*) y la división (/).</p>
+
+            <p>Al hacer operaciones en las que intervienen números enteros y decimales, el resultado es siempre decimal. En el caso de que el resultado no tenga parte decimal, Python escribe 0 como parte decimal para indicar que el resultado es un número decimal:</p>
+
+            <code>
+                >>> 4.5 * 3  <br>
+                13.5   <br>
+                >>> 4.5 * 2   <br>
+                9.0
+            </code>
+
+            <p>Al sumar, restar o multiplicar números enteros, el resultado es entero.</p>
+
+            <code>
+                >>> 1 + 2      <br>
+                3 <br>
+                >>> 3 - 4 <br>
+                -1 <br>
+                >>> 5 * 6 <br>
+                30
+            </code>
+
+            <p>Al dividir números enteros, el resultado es siempre decimal, aunque sea un número entero. Cuando Python escribe un número decimal, lo escribe siempre con parte decimal, aunque sea nula.
             </p>
 
             <code>
+                >>> 9 / 2 <br>                
+                4.5 <br>
+                >>> 9 / 3 <br>
+                3.0
+            </code>
 
+            <p>Dividir por cero genera un error:</p>
+            <code>
+                >>> 5 / 0 <br>
+                Traceback (most recent call last): <br>
+                File "<</>pyshell#22>", line 1, in <</>module> <br>
+                    5 / 0 <br>
+                ZeroDivisionError: division by zero <br>
+                >>>
+            </code>
+
+            <h3>Variables</h3>
+
+            <p>En algunos lenguajes de programación, las variables se pueden entender como "cajas" en las que se guardan los datos, pero en Python las variables son "etiquetas" que permiten hacer referencia a los datos (que se guardan en unas "cajas" llamadas objetos).</p>
+
+            <p>Python es un lenguaje de programación orientado a objetos y su modelo de datos también está basado en objetos.</p>
+
+            <p>Para cada dato que aparece en un programa, Python crea un objeto que lo contiene. Cada objeto tiene:</p>
+
+            <ul>
+                <li>Un identificador único (un número entero, distinto para cada objeto). El identificador permite a Python referirse al objeto sin ambigüedades.</li>
+                <li>Un tipo de datos (entero, decimal, cadena de caracteres, etc.). El tipo de datos permite saber a Python qué operaciones pueden hacerse con el dato.</li>
+                <li>Un valor (el propio dato).</li>
+            </ul>
+
+            <p>Así, las variables en Python no guardan los datos, sino que son simples nombres para poder hacer referencia a esos objetos. Si escribimos la instrucción ...</p>
+
+            <code>
+                a = 2
+            </code>
+
+            <p>... Python:</p>
+
+            <ul>
+                <li>
+                    Crea el objeto "2". Ese objeto tendrá un identificador único que se asigna en el momento de la creación y se conserva a lo largo del programa. En este caso, el objeto creado será de tipo número entero y guardará el valor 2.
+                </li>
+                <li>
+                    Asocia el nombre a al objeto número entero 2 creado.
+                </li>
+            </ul>
+
+            <p>Así, al describir la instrucción anterior no habría que decir 'la variable a almacena el número entero 2', sino que habría que decir 'podemos llamar a al objeto número entero 2'. La variable a es como una etiqueta que nos permite hacer referencia al objeto "2", más cómoda de recordar y utilizar que el identificador del objeto.</p>
+
+            <p>Por otro lado, en Python se distingue entre objetos mutables y objetos inmutables:</p>
+
+            <ul>
+                <li>
+                    Los objetos inmutables son objetos que no se pueden modificar. Por ejemplo, los números, las cadenas y las tuplas son objetos inmutables
+                </li>
+
+                <li>
+                    Los objetos mutables son objetos que se pueden modificar. Por ejemplo, las listas y los diccionarios son objetos mutables.
+                </li>
+            </ul>
+
+            <p>En el caso de los objetos inmutables (como los números) no hay mucha diferencia entre considerar la variable como una caja o como una etiqueta, pero en el caso de los objetos mutables (como las listas) pensar en las variables como cajas puede llevar a error.</p>
+
+            <p>Por economía del lenguaje, en estos apuntes se utilizan expresiones como "guardar un valor en una variable" en vez de "guardar el valor en un objeto y asociar una variable al objeto", pero el alumno debe tener presente lo que ocurre en realidad en Python.</p>
+
+            <p>En el ejemplo siguiente se almacena el número decimal 2.5 en una variable de nombre x (como se comenta en el apartado anterior, realmente habría que decir que se crea la etiqueta x para hacer referencia al objeto número decimal 2.5). Fíjese en que los números decimales se escriben con punto (.) y no con coma (,).</p>
+
+            <code>
+                >>> x = 2.5                
+            </code>
+
+            <p>La variable se escribe siempre a la izquierda de la igualdad. Si se escribe al revés, Python genera un mensaje de error:
+            </p>
+
+            <code>
+                >>> 2.5 = x <br>
+                SyntaxError: can't assign to literal                
+            </code>
+            <p>Si una variable no se ha definido previamente, escribir su nombre genera un mensaje de error:
+            </p>
+
+            <code>
+                >>> x = -10 <br>
+                >>> y <br>
+                Traceback (most recent call last): <br>
+                File "<</>pyshell#1>", line 1, in <</>module> <br>
+                    y <br>
+                NameError: name 'y' is not defined <br>
+                >>> nombre = Pepito Conejo <br>
+                SyntaxError: invalid syntax 
+            </code>
+            
+            <p>La instrucción del borra completamente una variable.</p>
+
+        </section>
+
+        <section class="main-section" id="Entrada y Salida">
+            <p>En un entorno interactivo (por ejemplo, en IDLE), para que python nos muestre el valor de una variable basta con escribir su nombre.</p>
+
+            <code>
+                >>> a = 2 <br>
+                >>> a <br>
+                2
+            </code>
+
+            <p>También se puede conocer el valor de varias variables a la vez escribiéndolas entre comas (el entorno interactivo las mostrará entre paréntesis), como muestra el siguiente ejemplo:</p>
+
+            <code>
+                >>> a = b = 2 <br>
+                >>> c = "pepe" <br>
+                >>> a <br>
+                2 <br>
+                >>> c, b <br>
+                ('pepe', 2)
+            </code>
+            
+            <h3>Print</h3>
+            <p>En los programas, para que python nos muestre texto o variables hay que utilizar la función print().</p>
+
+            <p>La función print() permite mostrar texto en pantalla. El texto a mostrar se escribe como argumento de la función:</p>
+
+            <code>
+                print("Hola") <br>
+                ---------- <br>
+                Hola                
+            </code>
+
+            <p>Las cadenas se pueden delimitar tanto por comillas dobles (") como por comillas simples (').</p>
+
+            <code>
+                print('Hola') <br>
+                ---------- <br>
+                Hola
+            </code>
+
+            <p>La función print() admite varios argumentos seguidos. En el programa, los argumentos deben separarse por comas. Los argumentos se muestran en el mismo orden y en la misma línea, separados por espacios:</p>   
+            
+            <code>
+                print("Hola", "Adiós") <br>
+                -------- <br>
+                    Hola Adiós
+            </code>
+
+            <p>Cuando se trata de dos cadenas seguidas, se puede no escribir comas entre ellas, pero las cadenas se escribirán seguidas, sin espacio en blanco entre ellas:</p>
+
+            <code>
+                print("Hola" "Adiós") <br>
+                ------ <br>
+                    HolaAdios
+            </code>
+
+            <p>Al final de cada print(), Python añade automáticamente un salto de línea:</p>
+
+            <code>
+                print("Hola") <br>
+                print("Adiós") <br>
+            ------------- <br>
+                Hola <br>
+                Adiós <br>
+            </code>            
+
+            <h3>Input</h3>
+            <p>La función input() permite obtener texto escrito por teclado. Al llegar a la función, el programa se detiene esperando que se escriba algo y se pulse la tecla Intro, como muestra el siguiente ejemplo:</p>
+                
+            <code>
+                print("¿Cómo se llama?") <br>
+                nombre = input() <br>
+                print(f"Me alegro de conocerle, {nombre}") <br>
+            
+            -------------------- <br>
+                ¿Cómo se llama? <br>
+                &nbsp    Pepe <br>
+                Me alegro de conocerle, Pepe <br>
+            </code>
+
+            <p>Otra solución, más compacta, es aprovechar que a la función input() se le puede enviar un argumento que se escribe en la pantalla (sin añadir un salto de línea):</p>
+
+            <code>
+                nombre = input("¿Cómo se llama? ") <br>
+                print(f"Me alegro de conocerle, {nombre}") <br>
+            --------------------- <br>
+                ¿Cómo se llama? Pepe <br>
+                Me alegro de conocerle, Pepe <br>
+            </code>
+        </section>
+        
+        <section class="main-section" id="If else">
+            <p>Sentencias condicionales: if ...</p>
+
+            <p>La estructura de control if ... permite que un programa ejecute unas instrucciones cuando se cumplan una condición. En inglés "if" significa "si" (condición).</p>
+
+            <p>Veamos un ejemplo. El programa siguiente pide un número positivos al usuario y almacena la respuesta en la variable "numero". Después comprueba si el número es negativo. Si lo es, el programa avisa que no era eso lo que se había pedido. Finalmente, el programa imprime siempre el valor introducido por el usuario. A continuación se pueden ver dos ejecuciones paso a paso de ese programa. En la primera el usuario escribe un valor negativo y en la segunda el usuario escribe un valor positivo:</p>
+
+            <code>
+                numero = int(input("Escriba un número positivo: ")) <br>
+                if numero < 0: <br>
+                    print("¡Le he dicho que escriba un número positivo!") <br>
+                print(f"Ha escrito el número {numero}") <br>
+            
+            ---------------------------------------------------------------- <br>
+                Escriba un número positivo: -5 <br>
+                ¡Le he dicho que escriba un número positivo! <br>
+                Ha escrito el número -5
+            </code>
+
+        </section>
+
+        <section class="main-section" id="For">
+            <p>En general, un bucle es una estructura de control que repite un bloque de instrucciones. Un bucle for es un bucle que repite el bloque de instrucciones un número prederminado de veces. El bloque de instrucciones que se repite se suele llamar cuerpo del bucle y cada repetición se suele llamar iteración.</p>
+
+            <p>La sintaxis de un bucle for es la siguiente:</p>
+            
+            <p>    for variable in elemento iterable (lista, cadena, range, etc.):
+                cuerpo del bucle</p>
+
+            <p>El cuerpo del bucle se ejecuta tantas veces como elementos tenga el elemento recorrible (elementos de una lista o de un range(), caracteres de una cadena, etc.). Por ejemplo:</p>
+
+            <code>
+                print("Comienzo") <br> <br>
+                for i in [0, 1, 2]: <br>
+                &nbsp print("Hola ", end="") <br> <br>
+                print() <br>
+                print("Final") <br>
+            ------------------- <br>
+                Comienzo <br>
+                Hola Hola Hola <br>
+                Final <br>
+            </code>
+
+            <p>Si la lista está vacía, el bucle no se ejecuta ninguna vez. Por ejemplo:</p>
+
+            <code>
+                print("Comienzo") <br> <br>
+                for i in []: <br> 
+                &nbsp print("Hola ", end="") <br> <br>
+                print() <br>
+                print("Final") <br>
+            
+            ---------- <br>
+                Comienzo <br>
+             <br>
+                Final <br>
+            
+            </code>
+            
+            <p>En el primer ejemplo, los valores que toma la variable no son importantes, lo que importa es que la lista tiene tres elementos y por tanto el bucle se ejecuta tres veces. El siguiente programa produciría el mismo resultado que el anterior:
+            </p>
+
+            <code>
+                print("Comienzo") <br> <br>
+                for i in [1, 1, 1]: <br> 
+                &nbsp print("Hola ", end="") <br> <br>
+                print() <br>
+                print("Final") <br>
+            -------- <br>
+                Comienzo <br>
+                Hola Hola Hola <br>
+                Final <br>
             </code>
         </section>
 
+        <section class="main-section" id="While">
+            <p>Un bucle while permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición (es decir, mientras la condición tenga el valor True).
+            </p>
+
+            <p>La sintaxis del bucle while es la siguiente:</p>
+
+            <code>
+                while condicion: <br>
+                &nbsp cuerpo del bucle <br>
+            </code>
+
+            <p>La ejecución de esta estructura de control while es la siguiente:</p>
+
+            <p>Python evalúa la condición:</p>
+
+            <ul>
+                <li>
+                    si el resultado es True se ejecuta el cuerpo del bucle. Una vez ejecutado el cuerpo del bucle, se repite el proceso (se evalúa de nuevo la condición y, si es cierta, se ejecuta de nuevo el cuerpo del bucle) una y otra vez mientras la condición sea cierta.
+                </li>
+                <li>
+                    si el resultado es False, el cuerpo del bucle no se ejecuta y continúa la ejecución del resto del programa.
+                </li>
+            </ul>
+
+            <p>La variable o las variables que aparezcan en la condición se suelen llamar variables de control. Las variables de control deben definirse antes del bucle while y modificarse en el bucle while.</p>
+
+            <p>Por ejemplo, el siguiente programa escribe los números del 1 al 3:</p>
+
+            <code>
+                i = 1 <br>
+                while i <= 3: <br>
+                &nbsp;print(i) <br>
+                &nbsp;i += 1 <br>
+                print("Programa terminado") <br>
+            -------- <br>
+                1 <br>
+                2 <br>
+                3 <br>
+                Programa terminado <br>
+            </code>
+
+            <p>Puede ver la ejecución paso a paso de este programa utilizando los iconos de avance y retroceso situados abajo a la derecha.</p>
+
+            <p>El ejemplo anterior se podría haber programado con un bucle for. La ventaja de un bucle while es que la variable de control se puede modificar con mayor flexibilidad, como en el ejemplo siguiente:</p>
+
+            <code>
+                i = 1 <br>
+                while i <= 50: <br>
+                &nbsp;print(i) <br>
+                &nbsp;i = 3 * i + 1 <br>
+                print("Programa terminado") <br>
+            ----------------- <br>
+                1 <br>
+                4 <br>
+                13 <br>
+                40 <br>
+                Programa terminado <br>
+            </code>
+
+            <p>Puede ver la ejecución paso a paso de este programa utilizando los iconos de avance y retroceso situados abajo a la derecha.</p>
+
+            <p>Otra ventaja del bucle while es que el número de iteraciones no está definida antes de empezar el bucle, por ejemplo porque los datos los proporciona el usuario. Por ejemplo, el siguiente ejemplo pide un número positivo al usuario una y otra vez hasta que el usuario lo haga correctamente:</p>
+
+            <code>
+                numero = int(input("Escriba un número positivo: ")) <br>
+                while numero < 0: <br>
+                &nbsp;print("¡Ha escrito un número negativo! Inténtelo de nuevo") <br>
+                &nbsp;numero = int(input("Escriba un número positivo: ")) <br>
+                print("Gracias por su colaboración") <br>
+            -------------------------- <br>
+                Escriba un número positivo: -4 <br>
+                ¡Ha escrito un número negativo! Inténtelo de nuevo <br>
+                Escriba un número positivo: -8 <br>
+                ¡Ha escrito un número negativo! Inténtelo de nuevo <br>
+                Escriba un número positivo: 9 <br>
+                Gracias por su colaboración <br>            
+            </code>
+
+        </section>
+
+        <section class="main-section" id="Funciones">
+            <p>Las funciones se pueden crear en cualquier punto de un programa, escribiendo su definición.
+            </p>
+
+            <p>La primera línea de la definición de una función contiene:</p>
+
+            <ul>
+                <li>La palabra reservada def</li>
+                <li>El nombre de la función (la guía de estilo de Python recomienda escribir todos los caracteres en minúsculas separando las palabras por guiones bajos)</li>
+                <li>Paréntesis (que pueden incluir los argumentos de la función, como se explica más adelante)</li>
+            </ul>
+
+            <p>Las instrucciones que forman la función se escriben con sangría con respecto a la primera línea.</p>
+
+            <p>Por comodidad, se puede indicar el final de la función con la palabra reservada return (más adelante se explica el uso de esta palabra reservada), aunque no es obligatorio.</p>
+
+            <p>Para poder utilizar una función en un programa se tiene que haber definido antes. Por ello, normalmente las definiciones de las funciones se suelen escribir al principio de los programas</p>
+
+            <p>El ejemplo siguiente muestra un programa que contiene una función y el resultado de la ejecución de ese programa.</p>
+
+            <code>
+                def licencia(): <br>
+                &nbsp;print("Copyright 2020 Bartolomé Sintes Marco") <br>
+                &nbsp;print("Licencia CC-BY-SA 4.0") <br>
+                &nbsp;return <br>
+        
+                print("Este programa no hace nada interesante.") <br>
+                licencia() <br> 
+                print("Programa terminado.") <br>
+                ---------- <br>
+                Este programa no hace nada interesante. <br>
+                Copyright 2020 Bartolomé Sintes Marco <br>
+                Licencia CC-BY-SA 4.0 <br>
+                Programa terminado. <br>
+            </code>
+        </section>
+        
         <section class="main-section" id="References">
             <header>References</header>
             <ul>
                 <li>
-                    All the documentation in this page is taken from <a href="https://docs.python.org/3/tutorial/index.html" target="_blank" >Python org</a>
+                    All the documentation in this page is taken from <a
+                        href="https://docs.python.org/3/tutorial/index.html" target="_blank">Python org</a>
                 </li>
             </ul>
-
-            <code>
-
-            </code>
         </section>
 
     </main>

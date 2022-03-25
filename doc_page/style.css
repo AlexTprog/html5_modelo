@@ -8,9 +8,14 @@ body{
 }
 
 #nav-bar{
-    border: 1px solid;
+    border: 2px solid;
+    border-color: rgb(122, 122, 122);
     background-color: white;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
 }
 
 #nav-bar header{
@@ -24,22 +29,38 @@ body{
     padding: 0;
 }
 
-#nav-bar li{
-    border: 1px solid;
+#nav-bar li{    
+    border: 1px solid black;
     border-style: solid none none none;
-    padding: 30px 0;    
+    padding: 10px 0;    
 }
 
 #nav-bar a{
-    color: black;
+    color: rgb(105, 102, 102);
     padding-left: 20px;
     text-decoration: solid;
     font-size: 20px;
 }
 
 #main-doc{
-    padding: 20px;
-    margin: 0;
+    padding: 0 80px 80px 80px;
+    margin: 0 0 110px 250px;
+    position: absolute;    
+    font-size: 18px;
+}
+
+#main-doc header{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+#main-doc p{    
+    padding: 10px 0 10px 0;
+}
+
+#main-doc h3{
+    font-size: 24px;    
 }
 
 #main-doc ul{
@@ -47,13 +68,36 @@ body{
 }
 
 #main-doc code{
+    color: white;
     display: inline-block;
-    background-color: #ebe6e6;
+    background-color: #1e1e1e;
     padding: 10px;
     border-radius: 5px;
-    
+    font-size: 15px;
+    margin: 0 0 0 80px;
+    width: 80%;    
 }
 
-section header{
-    font-size: 30px;
+#main-doc article{
+    margin: 0 0 0 20px;
+}
+
+.var{
+ color:#85c4e4;
+}
+
+.func{    
+    color: #dcdcaa;
+}
+
+.text{
+    color: #b5cea8;
+}
+
+.error{
+    color: red;
+}
+
+@media screen {
+     
 }
